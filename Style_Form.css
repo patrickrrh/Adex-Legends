@@ -1,0 +1,382 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: gaming;
+}
+
+@font-face {
+    src: url(Font/Tigerious-ywyKe.otf);
+    font-family: gaming;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    background-color: #101820FF;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 30px;
+    background-color: #FEE715FF;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option{
+    margin: 0 50px 0 10px;
+}
+
+.link{
+    font-size: 15px;
+    color: #d9d9d9;
+}
+
+.link:hover{
+    color: #FEE715FF;
+    transition: 0.5s;
+}
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown_isi{
+    display: none;
+    position: absolute;
+    background-color: #101820FF;
+    min-width: 100px;
+    box-shadow: 0px 3px 10px #101820FF;
+    padding-top: 35px;
+}
+
+.dropdown_isi a{
+    float: none;
+    font-size: 12px;
+    padding: 10px 15px 10px 0px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown_isi{
+    display: block;
+}
+
+#register{
+    background-color: #FEE715FF;
+    color: #101820FF;
+    padding: 5px 10px;
+}
+
+#register:hover{
+    background-color: #101820FF;
+    color: #FEE715FF;
+}
+
+.logo{
+    margin-left: 30px;
+    width: 90px;
+    height: 90px;
+}
+
+.form{
+    background-image: url(./Gambar/background.png);
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form img{
+    max-width: 50%;
+    width: 400px;
+    height: 630px;
+    object-fit: cover;
+}
+
+:focus{
+    outline: none;
+}
+
+.formContainer{
+    background: #101820FF;
+    max-width: 60%;
+    margin: 100px auto;
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 3px 50px #101820FF;
+}
+
+form{
+    width: 50%;
+    padding: 30px 45px 0 45px;
+    margin: auto;
+}
+
+.formContainer h2{
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #d9d9d9;
+}
+
+.type{
+    border: 1px solid #d9d9d9;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    background-color: #101820FF;
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 25px;
+}
+
+.typeNew{
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #d9d9d9;
+    font-size: 11px;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=file], input[type=checkbox]{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #d9d9d9;
+}
+
+input[type=submit]{
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin: 30px auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FEE715FF;
+    color: #101820FF;
+}
+
+input[type=submit]:hover{
+    color: #FEE715FF;
+    background: none;
+    transition: 0.3s;
+}
+
+.footer{
+    width: 100%;
+    background-color: #101820FF;
+    display: block;
+}
+
+.container_footer{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.isi{
+    margin-top: 30px;
+    width: 25%;
+    color: #d9d9d9;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    text-align: center;
+}
+
+.isi ul li{
+    margin-top: 10px;
+}
+
+.isi ul li a{
+    text-decoration: none;
+    color: #d9d9d9;
+    font-size: 12px;
+}
+
+.isi ul li a:hover{
+    color: #FEE715FF;
+    transition: 0.5s;
+}
+
+.underline{
+    height: 2px;
+    width: 55px;
+    background-color: #FEE715FF;
+    margin-top: 10px;
+}
+
+.underline2{
+    height: 2px;
+    width: 100px;
+    background-color: #FEE715FF;
+    margin-top: 10px;
+}
+
+#logo_footer{
+    width: 200px;
+    height: 200px;
+}
+
+.sosmed{
+    margin-top: 5px;
+}
+
+.sosmed:hover{
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+#ig{
+    width: 20px;
+    height: 20px;
+}
+
+#dc{
+    width: 20px;
+    height: 15px;
+}
+
+#twc{
+    width: 20px;
+    height: 20px;
+}
+
+#yt{
+    width: 20px;
+    height: 20px;
+}
+
+#esrb{
+    max-width: 100%;
+    width: 200px;
+    height: 100px;
+}
+
+#copyright{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #d9d9d9;
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 800px){
+    .header{
+        position: fixed;
+        width: 100%;
+    }
+
+    .menu{
+        position: fixed;
+        left: -100%;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: #101820FF;
+        top: 95px;
+    }
+
+    .menu.active{
+        left: 0;
+    }
+
+    .option{
+        margin: 10px;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .dropdown{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .dropdown_isi{
+        position: relative;
+        margin-left: 11px;
+        padding: 0px;
+    }
+
+    .dropdown_isi a{
+        text-align: center;
+    }
+
+    .form img{
+        min-width: 100%;
+        width: 400px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .formContainer{
+        display: block;
+        margin: 200px auto 100px;
+    }
+
+    .formContainer .formImage{
+        width: 100%;
+    }
+
+    .formContainer form{
+        width: 100%;
+    }
+    
+    button{
+        margin-bottom: 30px;
+    }
+
+    .container_footer{
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .isi{
+        width: 100%;
+    }
+}
+
